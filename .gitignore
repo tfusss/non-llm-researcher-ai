@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE & OS specific files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# File kết quả sinh tự động (bỏ dòng dưới nếu bạn muốn đẩy cả file mẫu output.txt lên GitHub)
+output.txt
