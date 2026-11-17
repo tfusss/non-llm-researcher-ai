@@ -8,12 +8,6 @@ Thư mục **core** chứa toàn bộ pipeline truy xuất thông tin và tóm t
 ### Performance
 Độ liên quan và chất lượng bản tóm tắt được tính toán bằng trọng số thống kê **TF-IDF** kết hợp với độ đo tương đồng **Cosine Similarity** và thuật toán **Maximal Marginal Relevance (MMR)** để khử trùng lặp đa văn bản. Kiến trúc hệ thống bao gồm 8 giai đoạn xử lý tuần tự từ mở rộng truy vấn (`query_expander.py`), tìm kiếm (`searcher.py`), bóc tách DOM (`extractor.py`), tiền xử lý (`preprocess.py`), vector hóa (`vectorizer.py`), truy xuất (`retriever.py`), chọn câu (`selector.py`) đến kết xuất báo cáo (`report.py`). Toàn bộ quá trình đánh giá và kiểm thử ngoại tuyến được thực hiện thông qua **test_offline.py** và công cụ chẩn đoán **diagnose.py** chạy hoàn toàn trên CPU với 0% ảo giác (Zero Hallucination).
 
-
-<img src="ScreenShots/SC1.png" width="100%">
-<img src="ScreenShots/SC2.png" width="100%">
-<img src="ScreenShots/SC3.png" width="100%">
-
-
 ## Requirements
 - Python 3.11
 - ddgs
@@ -52,11 +46,6 @@ The **core** folder contains the complete non-LLM retrieval and extractive summa
 
 ### Performance
 The relevance and summary quality are calculated by **TF-IDF Vectorization**, **Cosine Similarity**, and **Maximal Marginal Relevance (MMR)**, which measures the balance between query relevance and information diversity across multiple web sources. The system architecture consists of 8 sequential modules: Query Expander, Web Searcher, HTML Extractor, NLP Preprocessor, TF-IDF Vectorizer, Passage Retriever, MMR Selector, and Report Synthesizer. Offline validation and latency profiling are performed using **test_offline.py** and **core/diagnose.py** entirely on standard CPU hardware.
-
-
-<img src="ScreenShots/SC1.png" width="100%">
-<img src="ScreenShots/SC2.png" width="100%">
-<img src="ScreenShots/SC3.png" width="100%">
 
 
 ## Requirements
