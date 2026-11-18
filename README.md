@@ -27,8 +27,7 @@ ollama pull qwen2.5:1.5b
 - Chạy trực tiếp file **main.py** để thực thi pipeline tổng hợp trang web không dùng LLM.
 - Để chạy chế độ tóm tắt thành văn bản qua Ollama (`qwen2.5:1.5b`) và xuất kết quả ra file **output.txt**, mở terminal tại thư mục dự án và chạy:
 ```
-python main.py
-python slm.py
+python main.py "<nội dung cần trích xuất>"
 ```
 
 ## References
