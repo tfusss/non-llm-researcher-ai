@@ -13,7 +13,6 @@ LAMBDA = 0.7              # MMR: 1 = ưu tiên liên quan, 0 = ưu tiên đa d�
 W_BM25 = 0.5              # trọng số điểm BM25 của đoạn trong độ liên quan (phần còn lại là cosine)
 MAX_SENTS = 12            # số câu tối đa trong báo cáo
 MIN_LEN, MAX_LEN = 40, 400  # độ dài câu hợp lệ (ký tự)
-# Ví dụ cấu hình thêm
 DEEP_SEARCH_K = 3   # Số vòng lặp tối đa
 BRANCHING_M = 2     # Số câu MMR mồi (từ vòng trước) làm truy vấn cho vòng sau
 FINAL_F_SENTS = 15  # Số lượng câu đắt giá nhất xuất ra ở bước cuối
